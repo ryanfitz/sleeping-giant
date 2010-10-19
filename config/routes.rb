@@ -1,4 +1,5 @@
 SleepingGiant::Application.routes.draw do
+
   resources :servers do
     member do
       get 'dbs' => "databases#index"
