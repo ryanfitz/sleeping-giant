@@ -1,0 +1,13 @@
+%p
+  %b Name:
+  = @server.name
+%p
+  %b Host:
+  = @server.host
+%p
+  %b Port:
+  = @server.port
+
+= link_to 'Edit', edit_server_path(@server)
+\|
+= link_to 'Back', servers_path
