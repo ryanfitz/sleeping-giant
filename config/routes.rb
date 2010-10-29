@@ -3,6 +3,7 @@ SleepingGiant::Application.routes.draw do
   resources :servers do
     member do
       get 'dbs' => "databases#index"
+      get "/dbs/:db" => "databases#show", :as => :db_collections
     end
   end
 

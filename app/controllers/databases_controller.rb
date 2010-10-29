@@ -1,13 +1,12 @@
-class DatabasesController < ApplicationController
-  include Mongo
-  
+class DatabasesController < ApplicationController  
   respond_to :json
   
   def index
-    server = Server.find params[:id]
-    connection = Mongo::Connection.new(server.host, server.port)
-    
-    respond_with(connection.database_names)
+    respond_with(server.database_names)
   end
 
+  def show
+    respond_with(server[params[:db]].collection_names)
+  end
+  
 end
