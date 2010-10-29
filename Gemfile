@@ -11,7 +11,7 @@ gem 'haml'
 gem "haml-rails"
 gem 'compass'
 
-gem 'mongo', '>= 1.1.1'
+gem 'mongo', :git => "git://github.com/ryanfitz/mongo-ruby-driver.git", :branch => "as_json"
 gem 'bson_ext', '>= 1.1.1'
 
 group :test, :development do

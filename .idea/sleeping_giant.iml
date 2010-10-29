@@ -42,7 +42,7 @@
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="mongo" version="1.1.1" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+        <dependency name="mongo" version="0" bound="GREATER_OR_EQUAL" git="true" path="false" ref="as_json" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
     </requirement>

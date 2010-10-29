@@ -1,3 +1,13 @@
+GIT
+  remote: git://github.com/ryanfitz/mongo-ruby-driver.git
+  revision: dd76c6ad3429e774ba7c7810880c1fd562851e95
+  branch: as_json
+  specs:
+    bson (1.1.1)
+    bson_ext (1.1.1)
+    mongo (1.1.1)
+      bson (>= 1.1.1)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -31,8 +41,6 @@ GEM
     archive-tar-minitar (0.5.2)
     arel (1.0.1)
       activesupport (~> 3.0.0)
-    bson (1.1.1)
-    bson_ext (1.1.1)
     builder (2.1.2)
     columnize (0.3.1)
     compass (0.10.5)
@@ -56,8 +64,6 @@ GEM
       mime-types
       treetop (>= 1.4.5)
     mime-types (1.16)
-    mongo (1.1.1)
-      bson (>= 1.1.1)
     polyglot (0.3.1)
     rack (1.2.1)
     rack-mount (0.6.13)
@@ -115,7 +121,7 @@ DEPENDENCIES
   factory_girl_rails
   haml
   haml-rails
-  mongo (>= 1.1.1)
+  mongo!
   rails (= 3.0.0)
   rspec-rails (>= 2.0.0)
   ruby-debug19
