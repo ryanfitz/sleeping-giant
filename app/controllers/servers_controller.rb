@@ -1,6 +1,4 @@
 class ServersController < ApplicationController
-  # GET /servers
-  # GET /servers.xml
   respond_to :html, :json
   
   def index

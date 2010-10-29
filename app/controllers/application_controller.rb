@@ -4,4 +4,8 @@ class ApplicationController < ActionController::Base
   def server
     Server.find params[:id]
   end
+
+  def database
+    server[params[:db]]
+  end
 end

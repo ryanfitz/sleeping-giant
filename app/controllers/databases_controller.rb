@@ -6,7 +6,7 @@ class DatabasesController < ApplicationController
   end
 
   def show
-    respond_with(server[params[:db]].collection_names)
+    respond_with(database.collection_names)
   end
   
 end

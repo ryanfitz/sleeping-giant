@@ -4,6 +4,7 @@ SleepingGiant::Application.routes.draw do
     member do
       get 'dbs' => "databases#index"
       get "/dbs/:db" => "databases#show", :as => :db_collections
+      get "/dbs/:db/:collection" => "collections#index", :as => :collection
     end
   end
 
